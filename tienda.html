@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tienda</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_tienda.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="Website Icon" type="png" 
+        href="pet shop\img\icono-pagina.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script></script>
+
+</head>
+<body class="bg-dark">
+
+    <section class="centra">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars derecha"></i>
+            </label>
+            <ul class="ul">
+                <li class="li"><a class="a" href="inicio.html">inicio</a></li>
+                <li class="li"><a class="a" href="nosotros.html">nosotros</a></li>
+                <li class="li"><a class="a" href="contacto.html">contacto</a></li>
+                <li class="li"><a class="a" href="adopcion.html">adopcion</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div class="header-buttons">
+            <div id="cart-sidebar"> <h2 class="text-center">Carrito</h2> 
+                <table id="cart"> <thead> 
+                <tr> 
+                <th class="">Producto</th> 
+                <th>Precio</th>
+                <th>Cantidad</th> 
+                <th>Total</th> 
+                </tr> 
+                </thead> 
+                <tbody>     </tbody> 
+                </table> 
+                <button class="neon-btn centra" onclick="checkout()">Comprar</button> 
+            </div>
+        </div>
+    </section>
+
+
+    <section class="separar alinear">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="img-fluid" src="\pet shop\img-tienda\hueso.jpg" alt="hueso de juguete">
+                </div>
+                <div class="flip-card-black">
+                    <img class="img-fluid" src="\pet shop\img-tienda\hueso.jpg" alt="hueso de juguete">
+                    <h3>Hueso de juguete</h3>
+                    <h1>$4.990</h1>
+                    <button class="neon-btn2" onclick="addToCart('Producto 1', 4990)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="img-fluid" src="\pet shop\img-tienda\dispensador_de_comida.jpg" alt="dispensador de comida">
+                </div>
+                <div class="flip-card-black">
+                    <img class="img-fluid" src="\pet shop\img-tienda\dispensador_de_comida.jpg" alt="dispensador de comida">
+                    <h3>Dispensador</h3>
+                    <h1>$75.990</h1>
+                    <button class="neon-btn2" onclick="addToCart('Producto 2', 75990)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="img-fluid" src="\pet shop\img-tienda\cama.jpg" alt="camam de perro">
+                </div>
+                <div class="flip-card-black">
+                    <img class="img-fluid" src="\pet shop\img-tienda\cama.jpg" alt="cama de perro">
+                    <h3>Cama de perro</h3>
+                    <h1>$12.990</h1>
+                    <button class="neon-btn2" onclick="addToCart('Producto 3', 12990)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="separar alinear">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="img-fluid" src="\pet shop\img-tienda\pelotas.png" alt="pelotas de tenis">
+                </div>
+                <div class="flip-card-black">
+                    <img class="img-fluid" src="\pet shop\img-tienda\pelotas.png" alt="pelotas de tenis">
+                    <h3>Pelotas de tenis</h3>
+                    <h1>$7.990</h1>
+                    <button class="neon-btn2" onclick="addToCart('Producto 4', 7990)">Agregar al carrito</button> 
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="img-fluid" src="\pet shop\img-tienda\cepillo_de_perro.jpg" alt="cepillo de perro">
+                </div>
+                <div class="flip-card-black">
+                    <img class="img-fluid" src="\pet shop\img-tienda\cepillo_de_perro.jpg" alt="cepillo de perro">
+                    <h3>cepillo de perro</h3>
+                    <h1>$5.990</h1>
+                    <button class="neon-btn2" onclick="addToCart('Producto 5', 5990)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="img-fluid" src="\pet shop\img-tienda\collar.png" alt="collar de perro">
+                </div>
+                <div class="flip-card-black">
+                    <img class="img-fluid" src="\pet shop\img-tienda\collar.png" alt="collar de perro">
+                    <h3>collar de perro</h3>
+                    <h1>$5.500</h1>
+                    <button class="neon-btn2" onclick="addToCart('Producto 6', 5500)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="carrito.js"></script>
+    
+    
+    <section class="bajar">
+        <footer>
+            <p>Derechos reservados © 2023 Tienda en línea</p>
+        </footer>
+    </section>
+
+<body>
+</html>

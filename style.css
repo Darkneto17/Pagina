@@ -1,0 +1,144 @@
+/*cuerpo de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.centra{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.alinear{
+    display: flex;
+    margin: 20px;
+}
+
+.separar{
+    gap: 72px;
+}
+
+.bajar{
+    position: relative;
+    bottom: -500px;
+}
+
+.bajar2{
+    position: relative;
+    bottom: -50px;
+}
+
+
+
+/*menu de arriba*/
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.ul{
+    font-family: "chivo mono",monospace;
+    gap: 72px;
+    float: right;
+    margin-right: 20px;
+}
+
+.li {
+    list-style: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.a {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+.ul:hover .li .a {
+    color: #30edf4;
+}
+
+.ul:hover .li .a:not(:hover) {
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav .ul .li .a{
+        font-size: 16px;
+    }
+}
+
+.derecha{
+    float: right;
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+    nav .ul .li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav .ul .li .a{
+        font-size: 20px;
+    }
+    .li .a:hover, .li .a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+/*derechos que estan abajos*/
+footer {
+    background-color: #eaeaeb;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/*mensajes para la tienda*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
